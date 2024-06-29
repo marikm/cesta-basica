@@ -1,14 +1,3 @@
-<?php
-    require_once("./visualizacaobd.class.php");
-
-    try{
-        $dados = visualizacaobd::dadosSelecionados();
-    } catch(PDOException $p){
-        die($p->getMessage());
-    }
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,20 +17,23 @@
             </tr>
         </thead>
         <tbody>
-                <?php
-                    foreach($dados as $entrada){
-                        echo "<tr>";
-                        echo "<td>" . $entrada->getNomeDepartamento() . "</td>";
-                        echo "<td>" . $entrada->getIndustrializado() . "</td>";
-                        echo "<td>" . $entrada->getAtivado() . "</td>";
-                        echo "</tr>";
+            <?php
+                require_once("./visualizacaobd.php");
+                if($totalRegistros > 0){
+                    foreach($matrizDados as $linha){
+            ?>
+            <tr>
+                <td>
+                    <?=$linha["nomeDepartamento"];?>
+                </td>
+
+            </tr>
+            <?php
                     }
-                ?>
-                <!-- <tr>
-                    <th scope="row">Chris</th>
-                    <td>HTML tables</td>
-                    <td>22</td>
-                </tr> -->
+                }
+            ?>
+                
+                 
                
         </tbody>
 

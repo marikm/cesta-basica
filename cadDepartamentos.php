@@ -17,7 +17,10 @@
 <body>
     
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<<<<<<< HEAD
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+=======
+>>>>>>> fb98748 (programando sem classes)
     
     <nav class="nav-wrapper cyan lighten-2" style="height: 100px;">
         <?php include("menuPrincipal.php");?> 
@@ -36,7 +39,11 @@
 
         <h1 class="center-align" style="height: 50px;font-size:40px">Cadastro de Departamento</h1>
         
+<<<<<<< HEAD
             <form action="cadDepartamentosIns.php" method="POST" class="center-align" name="cadDepartamentosIns">
+=======
+            <form action="cadDepartamentosIns.php" method="POST" class="center-align">
+>>>>>>> fb98748 (programando sem classes)
                 <div class="row">
                     <div class="col s4 push-s4">
                         <label for="nomeDepartamento" style="height: 30px;font-size:20px">Nome do departamento</label>

@@ -1,7 +1,7 @@
 <?php
-	echo ("<pre>");
-    print_r( $_POST);
-	echo ("</pre>");
+	// echo ("<pre>");
+    // print_r( $_POST);
+	// echo ("</pre>");
 
 	if($_SERVER["REQUEST_METHOD"] == "POST"){
 		$nomeDepartamento = filter_input(INPUT_POST, "nomeDepartamento", FILTER_SANITIZE_FULL_SPECIAL_CHARS);
