@@ -70,8 +70,15 @@
                 <div class="row">
                     <div class="input-field col s4 push-s4">
                         <select name="industrializado">
-                            <option value="1">Sim</option>
-                            <option value="0">Não</option>
+                        <?php if($retorno['industrializado'] == 1) { ?>
+                            <option value="1" selected >Sim</option>
+                            <option value="0">Não</option>    
+
+                            <?php } else { ?>
+                                <option value="0" selected >Não</option>  
+                                <option value="1">Sim</option>
+
+                            <?php } ?>                     
                         </select>
                         <label for="industrializado" style="height: 30px;font-size:20px" >Há substituto mais barato?</label>
                     </div>
@@ -80,9 +87,16 @@
 
                 <div class="row">
                     <div class="input-field col s4 push-s4">
-                        <select name="ativado" value="<?$retorno['ativado'];?>">
-                            <option value="1">Sim</option>
-                            <option value="0">Não</option>
+                        <select name="ativado">
+                        <?php if($retorno['ativado'] == 1) { ?>
+                            <option value="1" selected >Sim</option>
+                            <option value="0">Não</option>    
+
+                            <?php } else { ?>
+                                <option value="0" selected >Não</option>  
+                                <option value="1">Sim</option>
+
+                            <?php } ?>
                         </select>
                         <label for="ativado" style="height: 30px;font-size:20px" >Ativado?</label>
                     </div>
