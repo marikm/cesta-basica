@@ -13,6 +13,7 @@
 
         // total de registros retornados da consulta
         $totalRegistros = $dadosSelecionados->rowCount();
+        
     } catch (PDOException $erro){
         echo("Entre em contato com o suporte");
     }

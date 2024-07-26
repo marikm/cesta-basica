@@ -24,7 +24,22 @@
             ?>
             <tr>
                 <td>
-                    <?=$linha["nomeDepartamento"];?>
+                    <?=$linha["nomeDepartamento"];// nome da coluna no bd?> 
+                </td>
+                <td>
+                    <?=$linha["industrializadoDepartamento"];?>
+                </td>
+                <td>
+                    <?=$linha["ativoDepartamento"];?>
+                </td>
+                <td>
+                <a href="./altDepartamento.php?id=<?=$linha["idDepartamento"];?>">
+                    <button>Editar</button>
+                </a>
+                    
+                </td>
+                <td>
+                    <button>Excluir</button>
                 </td>
 
             </tr>

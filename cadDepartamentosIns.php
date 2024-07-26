@@ -30,7 +30,8 @@
 				":industrializado" => $industrializado,
 				":ativado" => $ativado
 			));
-				// voltar para tela onde todo mundo ta cadastrado
+			
+			header("location:./visualizacao.php"); // volta para tela onde todo mundo ta cadastrado
 		}
 		catch(PDOException $erro){
 			echo("Entre em contato com o suporte, nao foi possivel adicionar dado");

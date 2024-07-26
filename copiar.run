@@ -1,2 +1,2 @@
-sudo rm -rf /opt/lampp/htdocs/cesta-basica-fatec
-sudo cp -fR /home/marina/cesta-basica-fatec/ /opt/lampp/htdocs
+sudo rm -rf /opt/lampp/htdocs/cesta-basica
+sudo cp -fR /home/marina/cesta-basica /opt/lampp/htdocs
