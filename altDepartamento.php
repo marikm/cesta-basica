@@ -70,13 +70,13 @@
                 <div class="row">
                     <div class="input-field col s4 push-s4">
                         <select name="industrializado">
-                        <?php if($retorno['industrializado'] == 1) { ?>
+                        <?php if($retorno['industrializadoDepartamento'] == "1") { ?>
                             <option value="1" selected >Sim</option>
                             <option value="0">Não</option>    
 
                             <?php } else { ?>
-                                <option value="0" selected >Não</option>  
                                 <option value="1">Sim</option>
+                                <option value="0" selected>Não</option>
 
                             <?php } ?>                     
                         </select>
@@ -88,15 +88,15 @@
                 <div class="row">
                     <div class="input-field col s4 push-s4">
                         <select name="ativado">
-                        <?php if($retorno['ativado'] == 1) { ?>
+                        <?php if($retorno['ativoDepartamento'] == "1") { ?>
                             <option value="1" selected >Sim</option>
                             <option value="0">Não</option>    
 
                             <?php } else { ?>
-                                <option value="0" selected >Não</option>  
                                 <option value="1">Sim</option>
+                                <option value="0" selected>Não</option>
 
-                            <?php } ?>
+                            <?php } ?>      
                         </select>
                         <label for="ativado" style="height: 30px;font-size:20px" >Ativado?</label>
                     </div>
