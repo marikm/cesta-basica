@@ -3,7 +3,7 @@
 
     try{
         // instrucao de selecionar toda a tabela departamentos 
-        $selectBD = "SELECT * FROM departamentos";
+        $selectBD = "SELECT * FROM departamentos WHERE ativoDepartamento = 1";
 
         //comando para executar a instrução 'selectBD' no banco 
         $dadosSelecionados = $conexao->query($selectBD);

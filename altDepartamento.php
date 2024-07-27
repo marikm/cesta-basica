@@ -59,7 +59,8 @@
 
         <h1 class="center-align" style="height: 50px;font-size:40px">Editar Departamento</h1>
         
-            <form action="altDepartamentosIns.php" method="POST" class="center-align">
+            <form action="altDepartamentoIns.php" method="POST" class="center-align">
+                <input type="hidden" name="id" value="<?=$id;?>">
                 <div class="row">
                     <div class="col s4 push-s4">
                         <label for="nomeDepartamento" style="height: 30px;font-size:20px">Nome do departamento</label>

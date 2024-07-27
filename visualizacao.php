@@ -39,7 +39,9 @@
                     
                 </td>
                 <td>
-                    <button>Excluir</button>
+                    <a href="./delDepartamentobd.php?id=<?=$linha["idDepartamento"];?>">
+                        <button>Excluir</button>
+                </a> 
                 </td>
 
             </tr>

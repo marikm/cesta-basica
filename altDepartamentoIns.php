@@ -1,4 +1,9 @@
 <?php
+    // echo "<pre>";    
+    //     print_r($_POST);
+    //     print_r($_SERVER["REQUEST_METHOD"]);
+    // echo "</pre>";
+
     if($_SERVER["REQUEST_METHOD"] == "POST"){
         $id = filter_input(INPUT_POST, "id", FILTER_SANITIZE_NUMBER_INT);
         $nomeDepartamento = filter_input(INPUT_POST, "nomeDepartamento", FILTER_SANITIZE_FULL_SPECIAL_CHARS);
@@ -10,20 +15,21 @@
 
             $comandoSQL = $conexao->prepare("
 
-            UPDATE usuarios SET 
-                nomeDepartamento = :nomeDepartamento,
-                industrializado = :industrializado,
-                ativado = :ativado,
-            WHERE idDepartamento = :id
-        ");
+                UPDATE departamentos SET 
+                    nomeDepartamento = :nomeDepartamento,
+                    industrializadoDepartamento = :industrializado,
+                    ativoDepartamento = :ativado
+                    WHERE idDepartamento = :id
+            ");
 
-        $comandoSQL->execute(array(
-            ":nomeDepartamento"         => $nomeDepartamento,
-            ":industrializado"     => $industrializado,
-            ":ativado"     => $ativado
-        ));
+            $comandoSQL->execute(array(
+                ":nomeDepartamento"         => $nomeDepartamento,
+                ":industrializado"     => $industrializado,
+                ":ativado"     => $ativado,
+                ":id" => $id
+            ));
         
-        header("location:./visualizacao.php");
+            header("location:./visualizacao.php");
 
 
         } catch(PDOException $e) {
