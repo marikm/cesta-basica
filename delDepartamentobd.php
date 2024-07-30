@@ -22,5 +22,5 @@ try {
 
 
 } catch (PDOException $erro) {
-    echo ("Não foi possível desativar!");
+    echo "Não foi possível desativar!";
 }
