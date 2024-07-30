@@ -30,15 +30,20 @@
 
     <form action="visualizacao.php" method="POST">   
 
-        <div class="row">
-            <div class="input-field col s2 push-s10">
-                <select name="departamentoStatus" id="">
-                    <option value="1">Somente ativos</option>
-                    <option value="0">Todos Departamentos</option>
-                </select>
-                <button  class="waves-effect waves-light btn"  type="submit">Filtrar</button>
+        <div class="section">
+            <div class="row">
+                <div class="col s12">This div is 12-columns wide on all screen sizes</div>
+
+                <div class="input-field col s4 ">
+                    <select name="departamentoStatus" id="">
+                        <option value="1">Somente ativos</option>
+                        <option value="0">Todos Departamentos</option>
+                    </select>
+                    <label for="departamentoStatus" style="height: 20px;font-size:15px" >Visualização de Departamentos</label>
+                    <button  class="waves-effect waves-light btn"  type="submit">Filtrar</button>
+                </div>
             </div>
-            <label for="departamentoStatus" style="height: 20px;font-size:15px" >Visualização de Departamentos</label>
+            
         </div>
 
         <?php
