@@ -4,7 +4,6 @@
     $statusCadastro = $_POST['departamentoStatus'] ?? "1";
 
     //$statusCadastro =  filter_input(INPUT_POST, "departamentoStatus", FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-    echo $statusCadastro;
     try{
         if  ($statusCadastro == "0"){
         // instrucao de selecionar toda a tabela departamentos 

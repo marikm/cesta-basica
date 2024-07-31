@@ -25,16 +25,13 @@
             </script>
 
 
-
-
-
     <form action="visualizacao.php" method="POST">   
 
-        <div class="section">
+        <div class="section"></div>
             <div class="row">
-                <div class="col s12">This div is 12-columns wide on all screen sizes</div>
+                <div class="col s8 push-s4"></div>
 
-                <div class="input-field col s4 ">
+                <div class="input-field col s2 ">
                     <select name="departamentoStatus" id="">
                         <option value="1">Somente ativos</option>
                         <option value="0">Todos Departamentos</option>
@@ -43,12 +40,6 @@
                     <button  class="waves-effect waves-light btn"  type="submit">Filtrar</button>
                 </div>
             </div>
-            
-        </div>
-
-        <?php
-            require_once("./visualizacaobd.php");
-        ?>
 
         <div class="container">
 
