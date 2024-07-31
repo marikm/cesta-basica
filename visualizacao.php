@@ -34,13 +34,10 @@
 
         <div class="section"></div>
             <div class="row">
-                <div class="">
-                    <div class="col s7">
+                    <div class="col s5">
                         <label for="" style="" >Pesquisar Departamento</label>
                         <input type="search" name="pesquisa">
                         <button  class="waves-effect waves-light btn"  type="submit">Pesquisar</button>
-                    </div>
-                    <div class="col s2">
                     </div>
 
                     <div class="input-field col s3">
@@ -51,7 +48,14 @@
                         <label for="departamentoStatus" style="height: 20px;font-size:15px" >Visualização de Departamentos</label>
                         <button  class="waves-effect waves-light btn"  type="submit">Filtrar</button>
                     </div>
-                </div>
+
+                    <div class="col s4">
+                        <div class="right-align">
+                            <a class="waves-effect waves-light btn " href="cadDepartamentos.php">Cadastrar novo departamento</a>
+
+                        </div>
+                    </div>
+                
             </div>
 
             <h1 style = font-size:20px>Departamentos Cadastrados</h1>

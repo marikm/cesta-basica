@@ -103,8 +103,8 @@
                     </div>
                 </div>
 
-                <input type="reset" value=" Limpar" />
-                <input type="submit" value = "Salvar">
+                <input  class="waves-effect waves-light btn" type="reset" value=" Limpar" />
+                <input class="waves-effect waves-light btn" type="submit" value = "Salvar">
                 
             </form>        
     </main>
