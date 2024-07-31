@@ -27,21 +27,32 @@
 
     <form action="visualizacao.php" method="POST">   
 
+        <div class="container">
+        <?php
+           // print_r($_POST);
+        ?>
+
         <div class="section"></div>
             <div class="row">
-                <div class="col s8 push-s4"></div>
+                <div class="">
+                    <div class="col s7">
+                        <label for="" style="" >Pesquisar Departamento</label>
+                        <input type="search" name="pesquisa">
+                        <button  class="waves-effect waves-light btn"  type="submit">Pesquisar</button>
+                    </div>
+                    <div class="col s2">
+                    </div>
 
-                <div class="input-field col s2 ">
-                    <select name="departamentoStatus" id="">
-                        <option value="1">Somente ativos</option>
-                        <option value="0">Todos Departamentos</option>
-                    </select>
-                    <label for="departamentoStatus" style="height: 20px;font-size:15px" >Visualização de Departamentos</label>
-                    <button  class="waves-effect waves-light btn"  type="submit">Filtrar</button>
+                    <div class="input-field col s3">
+                        <select name="departamentoStatus" id="">
+                            <option value="1" selected>Somente ativos</option>
+                            <option value="0">Todos Departamentos</option>
+                        </select>
+                        <label for="departamentoStatus" style="height: 20px;font-size:15px" >Visualização de Departamentos</label>
+                        <button  class="waves-effect waves-light btn"  type="submit">Filtrar</button>
+                    </div>
                 </div>
             </div>
-
-        <div class="container">
 
             <h1 style = font-size:20px>Departamentos Cadastrados</h1>
 
