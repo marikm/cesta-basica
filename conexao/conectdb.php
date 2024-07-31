@@ -8,4 +8,11 @@ try {
 } catch (PDOException $erro) {
     echo $erro->getMessage();
 }
+
+function traduzir0ou1($variavel) {
+    if($variavel == "0") {
+        return "Não";
+    }
+    return "Sim";
+}
     

@@ -18,7 +18,7 @@
     
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     
-    <nav class="nav-wrapper cyan lighten-2" style="height: 100px;">
+    <nav class="nav-wrapper teal lighten-2" style="height: 100px;">
         <?php include("menuPrincipal.php");?> 
     </nav>
 

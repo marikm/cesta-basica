@@ -11,7 +11,7 @@
         
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
         
-        <nav class="nav-wrapper cyan lighten-2" style="height: 100px;">
+        <nav class="nav-wrapper teal lighten-2" style="height: 100px;">
             <?php include("menuPrincipal.php");?> 
         </nav>
         
@@ -75,14 +75,15 @@
                             <?=$linha["nomeDepartamento"];// nome da coluna no bd?> 
                         </td>
                         <td>
-                            <?=$linha["industrializadoDepartamento"];?>
+                            <?=traduzir0ou1($linha["industrializadoDepartamento"]);?>
                         </td>
                         <td>
-                            <?=$linha["ativoDepartamento"];?>
+                            <?=traduzir0ou1($linha["ativoDepartamento"]);?>
                         </td>
-                        <td>
+                        <td class="right-align">
                             <a class="waves-effect waves-light btn" href="./altDepartamento.php?id=<?=$linha["idDepartamento"];?>">Editar</a>
-
+                        </td>
+                        <td class="right-align">
                             <a class="waves-effect waves-light  red lighten-1 btn" href="./delDepartamentobd.php?id=<?=$linha["idDepartamento"];?>">Excluir</a>
                         </td>
 
